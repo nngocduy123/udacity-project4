@@ -1,4 +1,4 @@
-[![main branch status](https://dl.circleci.com/status-badge/img/gh/huynhphamduytruong/udacity-aws-cdo-prj4/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/huynhphamduytruong/udacity-aws-cdo-prj4/tree/main)
+[![main branch status](https://dl.circleci.com/status-badge/img/gh/nngocduy123/udacity-project4/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/nngocduy123/udacity-project4/tree/main)
 
 # Operationalize a Machine Learning Microservice API
 
