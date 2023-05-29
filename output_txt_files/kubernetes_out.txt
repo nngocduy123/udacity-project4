@@ -1,12 +1,13 @@
+(venv) MacBook-Pro-cua-Duy:prj4_new duynguyen$ ./run_kubernetes.sh
 NAME                      READY   STATUS    RESTARTS   AGE
-udacity-cdo-prj4-latest   1/1     Running   0          6m50s
+udacity-cdo-prj4-latest   1/1     Running   0          34m
 Forwarding from 127.0.0.1:8000 -> 80
 Forwarding from [::1]:8000 -> 80
 Handling connection for 8000
 
 ---
 
-./make_prediction.sh
+(venv) MacBook-Pro-cua-Duy:prj4_new duynguyen$ ./make_prediction.sh
 Port: 8000
 {
   "prediction": [
