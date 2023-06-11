@@ -1,23 +1,20 @@
+# Use an official Python runtime as a parent image
 FROM python:3.7.3-stretch
 
-## Step 1:
-# Create a working directory
+# Set the working directory to /app
 WORKDIR /app
 
-## Step 2:
-# Copy source code to working directory
-COPY . app.py /app/
-COPY . requirements.txt /app/
+# Copy the current directory contents into the container at /app
+COPY . /app
 
-## Step 3:
-# Install packages from requirements.txt
-# hadolint ignore=DL3013,DL3042
-RUN pip install --upgrade pip && pip install -r requirements.txt
+# Install any needed packages specified in requirements.txt
+RUN pip install --trusted-host pypi.python.org -r requirements.txt
 
-## Step 4:
-# Expose port 80
+# Expose port 80 for the Flask app
 EXPOSE 80
 
-## Step 5:
-# Run app.py at container launch
-CMD [ "python", "app.py" ]
+# Define environment variable
+ENV PORT=80
+
+# Run app.py when the container launches
+CMD ["python", "app.py"]
